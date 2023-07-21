@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+ <mapper namespace="com.addong.book.dao.BookDao">
+ 
+	<insert id="insert">
+		INSERT INTO tbl_books(
+		B_CODE, B_NAME, B_AUTHOR, B_COMP, B_YEAR, B_IPRICE ,B_RPRICE)
+		VALUES(
+		#{B_CODE}, #{B_NAME}, #{B_AUTHOR}, #{B_COMP},
+		 #{B_YEAR}, #{B_IPRICE} ,#{B_RPRICE})
+		
+		
+	</insert>
+ 
+ </mapper> 
